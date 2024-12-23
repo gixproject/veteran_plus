@@ -1,0 +1,11 @@
+services:
+  veteran_plus:
+    image: veteran_plus
+    ports:
+      - "8080:8080"
+    build:
+      context: .
+    env_file:
+      - .env
+    volumes:
+      - .:/app/
